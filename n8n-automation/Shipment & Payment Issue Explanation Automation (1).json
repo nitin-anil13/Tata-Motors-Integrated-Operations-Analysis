@@ -48,7 +48,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer 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"
+              "value": "Bearer gsk_ZG9EylpqiK9YjXvlaLITW*******Tcf8paoNgFiGfGvbvfQB"
             },
             {
               "name": "Content-Type",
