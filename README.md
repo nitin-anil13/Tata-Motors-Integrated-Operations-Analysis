@@ -168,7 +168,7 @@ Estimated Profitability Improvement
 
 26%
 
-Authors
+**Author**
 Nithin V Anil
 
 **Project Outcome**
