@@ -1,176 +1,221 @@
-# Tata-Motors-Integrated-Operations-Analysis
+# 🚗 Tata Motors Integrated Operations Analysis
 
-**Business Problem**
+## 📌 Overview
+
+This project presents an end-to-end Manufacturing Operations Analytics solution for Tata Motors, focusing on logistics management, shipment tracking, payment monitoring, customer insights, and AI-powered operational automation.
+
+The solution combines SQL ETL pipelines, Excel-based exploratory data analysis, Power BI dashboards, and GenAI-powered n8n workflows to generate actionable business insights and automate operational reporting.
+
+---
+
+## 🎯 Business Problem
 
 Tata Motors manages large-scale manufacturing and logistics operations involving:
 
-  1.Shipment Tracking
-  2.Dealer Distribution
-  3.Customer Management
-  4.Payment Processing
-  5.Employee Operations
-  6.Supply Chain Monitoring
+* Shipment Tracking
+* Dealer Distribution
+* Customer Management
+* Payment Processing
+* Employee Operations
+* Supply Chain Monitoring
 
 As operational data grows, manual reporting and fragmented systems reduce visibility into business performance and logistics efficiency.
 
 This project builds a centralized analytics ecosystem to improve operational intelligence and automate reporting workflows.
 
-**Project Objectives**
-**SQL ETL Pipeline**
-Design relational database schema
-Load operational datasets into PostgreSQL
-Clean and transform logistics data
-Create analytical datasets
+---
 
-**Excel Exploratory Data Analysis**
-Customer Analytics
-Shipment Analysis
-Payment Analysis
-Logistics Efficiency Evaluation
+## 🏗️ Project Objectives
 
-**Power BI Dashboard**
-Customer Insights
-Shipment Operations Monitoring
-Financial Health Dashboard
+### SQL ETL Pipeline
 
-**GenAI Automation**
-Daily Logistics Summary Generation
-Shipment & Payment Issue Explanation System
+* Design relational database schema
+* Load operational datasets into PostgreSQL
+* Clean and transform logistics data
+* Create analytical datasets
 
-**Technology Stack**
-PostgreSQL
-SQL
-Microsoft Excel
-Power BI
-n8n
-Groq Llama 3.3 70B
-Postman
+### Excel Exploratory Data Analysis
 
-**Database Architecture**
+* Customer Analytics
+* Shipment Analysis
+* Payment Analysis
+* Logistics Efficiency Evaluation
 
-The solution uses seven operational datasets:
+### Power BI Dashboard
 
-Customer
-Membership
-Employee Details
-Shipment Details
-Payment Details
-Shipment Status
-Employee Shipment Mapping
+* Customer Insights
+* Shipment Operations Monitoring
+* Financial Health Dashboard
 
-The relational model supports shipment operations, customer management, payment tracking, and logistics analytics.
+### GenAI Automation
 
-**Key Business Insights**
-**Logistics Performance**
-Domestic shipments average 117.98 days delivery time
-International shipments average 96.26 days delivery time
-Regional logistics bottlenecks identified
+* Daily Logistics Summary Generation
+* Shipment & Payment Issue Explanation System
 
-**Payment Analytics**
-COD transactions average ₹49,578.86
-Card payments average ₹45,039.89
-Higher operational dependency on COD workflows
+---
 
-**Cargo Operations**
-More than 60% shipments classified as Heavy Cargo
-Increased transportation and warehousing complexity
+## 🛠️ Technology Stack
 
-**Customer Analytics**
-Retail customers represent approximately 39% of total customers
-Expired memberships indicate retention opportunities
+| Technology         | Purpose                   |
+| ------------------ | ------------------------- |
+| PostgreSQL         | Database Management       |
+| SQL                | ETL & Data Analysis       |
+| Microsoft Excel    | Exploratory Data Analysis |
+| Power BI           | Interactive Dashboards    |
+| n8n                | Workflow Automation       |
+| Groq Llama 3.3 70B | Generative AI             |
+| Postman            | API Testing               |
 
+---
 
-**Power BI Dashboard Modules**
+## 🗄️ Database Architecture
 
-**Customer Insights Panel**
-  1.Customer Segmentation
-  2.Membership Analysis
-  3.Revenue Contribution
+The solution utilizes seven operational datasets:
 
-**Shipment Operations Dashboard**
-  1.Domestic vs International Logistics
-  2.Delivery Performance
-  3.Service Type Analysis
+1. Customer
+2. Membership
+3. Employee Details
+4. Shipment Details
+5. Payment Details
+6. Shipment Status
+7. Employee Shipment Mapping
 
-**Financial Health Monitor**
-  1.Revenue Trends
-  2.Payment Recovery
-  3.Customer Revenue Contribution
+The relational database model supports shipment operations, customer management, payment tracking, employee assignment, and logistics analytics.
 
+---
 
-**GenAI + n8n Automation**
+## 📊 Key Business Insights
 
-**Automation 1: Daily Logistics Operations Summary**
+### Logistics Performance
 
-Business Problem:
+* Domestic shipments average **117.98 days** delivery time.
+* International shipments average **96.26 days** delivery time.
+* Regional logistics bottlenecks were identified within domestic distribution networks.
+
+### Payment Analytics
+
+* Cash on Delivery (COD) transactions average **₹49,578.86**.
+* Card payments average **₹45,039.89**.
+* Operations show significant dependency on COD-based payment workflows.
+
+### Cargo Operations
+
+* More than **60%** of shipments are classified as Heavy Cargo.
+* Increased transportation and warehousing complexity impacts operational efficiency.
+
+### Customer Analytics
+
+* Retail customers account for approximately **39%** of the customer base.
+* Expired memberships indicate customer retention opportunities.
+
+---
+
+## 📈 Power BI Dashboard Modules
+
+### Customer Insights Dashboard
+
+* Customer Segmentation
+* Membership Analysis
+* Revenue Contribution Analysis
+
+### Shipment Operations Dashboard
+
+* Domestic vs International Logistics
+* Delivery Performance Monitoring
+* Service Type Analysis
+
+### Financial Health Dashboard
+
+* Revenue Trends
+* Payment Recovery Analysis
+* Customer Revenue Contribution
+
+---
+
+## 🤖 GenAI + n8n Automation
+
+### Automation 1: Daily Logistics Operations Summary
+
+#### Business Problem
 
 Operations managers cannot continuously monitor dashboards throughout the day.
 
-Solution:
+#### Solution
 
-An automated workflow retrieves operational metrics and generates AI-powered daily summaries.
+An automated workflow retrieves operational metrics and generates AI-powered daily logistics summaries.
 
-Workflow:
+#### Workflow
 
 Cron Trigger
 
-↓
+⬇️
 
 SQL Metrics Extraction
 
-↓
+⬇️
 
 GenAI Analysis
 
-↓
+⬇️
 
 Email Report Generation
 
+---
 
-**Automation 2: Shipment & Payment Issue Explanation**
+### Automation 2: Shipment & Payment Issue Explanation System
 
-Business Problem:
+#### Business Problem
 
-Operations teams require immediate explanations for shipment delays and payment issues.
+Operations teams require immediate explanations for shipment delays, payment issues, and operational exceptions.
 
-Solution:
+#### Solution
 
 An AI-powered workflow retrieves shipment, payment, and employee information and generates business-friendly operational explanations.
 
-Workflow:
+#### Workflow
 
 Webhook Input
 
-↓
+⬇️
 
 Shipment Lookup
 
-↓
+⬇️
 
 SQL Data Retrieval
 
-↓
+⬇️
 
 GenAI Reasoning
 
-↓
+⬇️
 
 Operational Explanation
 
-Estimated Business Impact
-Initiative	Expected Improvement
-Predictive Maintenance	8%
-Defect Reduction	5%
-Inventory Optimization	4%
-EV Expansion	6%
-Supply Chain Optimization	3%
-Estimated Profitability Improvement
+---
 
-26%
+## 📈 Estimated Business Impact
 
-**Author**
-Nithin V Anil
+| Initiative                | Expected Improvement |
+| ------------------------- | -------------------- |
+| Predictive Maintenance    | 8%                   |
+| Defect Reduction          | 5%                   |
+| Inventory Optimization    | 4%                   |
+| EV Expansion              | 6%                   |
+| Supply Chain Optimization | 3%                   |
 
-**Project Outcome**
+### Overall Estimated Profitability Improvement
 
-The project demonstrates how SQL ETL, Excel Analytics, Power BI Reporting, and GenAI Automation can be integrated into a unified manufacturing analytics ecosystem capable of improving logistics visibility, operational efficiency, and data-driven decision-making across Tata Motors' manufacturing and supply chain network.
+**26%**
+
+---
+
+## 👨‍💻 Author
+
+**Nithin V Anil**
+
+---
+
+## 🎯 Project Outcome
+
+This project demonstrates how SQL ETL, Excel Analytics, Power BI Reporting, and GenAI Automation can be integrated into a unified manufacturing analytics ecosystem capable of improving logistics visibility, operational efficiency, and data-driven decision-making across Tata Motors' manufacturing and supply chain network.
